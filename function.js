@@ -1,16 +1,13 @@
-window.function = function (name) {
+window.function = function (year,month,day,hour,minute);
 
-  name = name.value ?? "";
+year = year.value ?? "";
+month = month.value ?? "";
+day = day.value ?? "";
+hour = hour.value ?? "";
+minute = minute.value ?? "";
 
-  if (name == "") {
-    return "";
-  }
+const s = new Date(year, month, day, hour, minute);
 
-  else {
-    name = name.trim();
-    arr = name.split(" ");
-    final = arr[0];
-    return final;
-  }
+return s.toLocaleString("en-AU", {year: 'numeric', month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit', hour12: true}).toString();
 
 }
