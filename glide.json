@@ -1,14 +1,34 @@
 [
   {
     "kind": "column",
-    "name": "Get first name",
-    "description": "Get first name from user's full name",
+    "name": "Return British date format",
+    "description": "",
     "author": "Thinh Dinh <thinh@lowcode.agency>",
     "params": [
       {
-        "name": "name",
-        "displayName": "Name",
-        "type": "string"
+        "name": "year",
+        "displayName": "Year",
+        "type": "number"
+      },
+      {
+        "name": "month",
+        "displayName": "Month",
+        "type": "number"
+      },
+      {
+        "name": "day",
+        "displayName": "Day",
+        "type": "number"
+      },
+      {
+        "name": "hour",
+        "displayName": "Hour",
+        "type": "number"
+      },
+      {
+        "name": "minutes",
+        "displayName": "Minutes",
+        "type": "number"
       }
     ],
     "result": {
