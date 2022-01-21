@@ -1,4 +1,4 @@
-window.function = function (year,month,day,hour,minute);
+window.function = function (year,month,day,hour,minute) {
 
 year = year.value ?? "";
 month = month.value ?? "";
